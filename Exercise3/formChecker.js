@@ -4,7 +4,9 @@ function validate(){
   var earphoneInput = document.getElementById("earphones").value;
   var pencilInput = document.getElementById("pencil").value;
   var notebookInput = document.getElementById("notebook").value;
-  var shipping = document.getElementById("shipping");
+  var shipping1 = document.getElementById("shipping1");
+  var shipping2 = document.getElementById("shipping2");
+  var shipping3 = document.getElementById("shipping3");
   //var shipQuan = document.getElementByName("shipping").value;
   //var checkEmail = false;
   //var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
@@ -34,7 +36,7 @@ function validate(){
         alert("You must fill in an quanity amount for the item notebook.");
         return false;
       }
-      if(!shipping.checked){
+      if(!shipping1.checked && !shipping2.checked && !shipping3.checked){
           alert("You must fill in all fields for shipping before continuing.");
           return false;
         }
