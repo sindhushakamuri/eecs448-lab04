@@ -16,8 +16,9 @@ function validate(){
   //   alert("You must fill in all values!");
     // return false;
    //}
-  if(userName == ""){
-     alert("You must fill in a username");
+
+  if(userName == ""  || userName == "" ||!userName.includes("@") || !userName.endsWith(".com")){
+     alert("You must fill in a username with the correct atrributes eg. name@domain.com");
      return false;
    }
    if(passWord == ""){
